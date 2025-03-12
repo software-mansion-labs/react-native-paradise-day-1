@@ -1,3 +1,4 @@
+import { useUser } from "@clerk/clerk-expo";
 import * as Sentry from "@sentry/react-native";
 import { useNavigationContainerRef } from "expo-router";
 import React from "react";
@@ -39,6 +40,20 @@ export function initializeSentry() {
 
 export function WithSentryUser() {
   // TODO(sentry-user): Add user to Sentry
+  const { user } = useUser();
+
+  React.useEffect(() => {
+    if (!user) {
+      Sentry.setUser(null);
+      return;
+    }
+
+    Sentry.setUser({
+      id: user.id,
+      email: user?.emailAddresses?.[0]?.emailAddress || "unknown",
+      username: user?.username || "unknown",
+    });
+  }, [user]);
 
   return null;
 }
