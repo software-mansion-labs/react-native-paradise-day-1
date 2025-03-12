@@ -9,13 +9,15 @@ import Glide from "@glidejs/glide";
 
 type BannersProps = {
   dom?: import("expo/dom").DOMProps;
+
+  images?: string[];
+  openBrowser?: (link: string) => void;
+  onImageClick?: (image: string) => void;
 };
 
 export default function Carousel(props: BannersProps) {
   // TODO(dom-components): Pass data to the dom component
-  const images: string[] = [];
-  const onImageClick = (image: string) => {};
-  const openBrowser = (link: string) => {};
+  const { images, openBrowser, onImageClick } = props;
 
   useEffect(() => {
     const glide = new Glide(".glide", {

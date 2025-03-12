@@ -1,4 +1,4 @@
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Linking } from "react-native";
 import React, { useState, useEffect } from "react";
 import { SearchBar } from "@/components/SearchBar";
 import { Section } from "@/components/Section";
@@ -67,6 +67,13 @@ export function HomeScreen(props: HomeScreenProps) {
       <View style={styles.carouselContainer}>
         {/* TODO(dom-components): Pass data to the dom component */}
         <Carousel
+          images={images}
+          openBrowser={() => {
+            Linking.openURL("https://www.freepik.com");
+          }}
+          onImageClick={(image) => {
+            console.log("image clicked", image);
+          }}
           dom={{
             style: {
               width: "100%",
