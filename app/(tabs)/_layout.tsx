@@ -12,7 +12,7 @@ export default function Layout() {
   return (
     <Tabs screenOptions={defaults.navigation.tabs}>
       <Tabs.Screen
-        name="index"
+        name="(toptabs)"
         options={{
           title: "Home",
           tabBarIcon: HomeIcon,
