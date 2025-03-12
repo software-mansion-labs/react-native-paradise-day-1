@@ -1,3 +1,4 @@
+import { HideSplash } from "@/components/HideSplash";
 import { defaults } from "@/constants/defaults";
 import { LoadingScreen } from "@/screens/LoadingScreen";
 import { useAuth } from "@clerk/clerk-expo";
@@ -16,5 +17,10 @@ export default function Layout() {
     );
   }
 
-  return <Stack screenOptions={defaults.navigation.authStack} />;
+  return (
+    <>
+      <HideSplash />
+      <Stack screenOptions={defaults.navigation.authStack} />;
+    </>
+  );
 }

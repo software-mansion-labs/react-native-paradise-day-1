@@ -1,5 +1,6 @@
 import React from "react";
 import { Slot } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
 import { ToastProvider } from "@/components/ToastProvider";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
@@ -19,6 +20,12 @@ initializeSentry();
 LogBox.uninstall();
 
 setupBackgroundUpdates();
+
+SplashScreen.preventAutoHideAsync();
+SplashScreen.setOptions({
+  fade: true,
+  duration: 300,
+});
 
 function Layout() {
   return (
