@@ -10,6 +10,7 @@ import { LogBox } from "react-native";
 import { setupBackgroundUpdates } from "@/background/UpdatesTask";
 import * as Sentry from "@sentry/react-native";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Clerk } from "@/auth/Clerk";
 
 const queryClient = new QueryClient();
 
@@ -25,8 +26,10 @@ function Layout() {
       <QueryClientProvider client={queryClient}>
         <SentryNavigationIntegration>
           <GestureHandlerRootView style={{ flex: 1 }}>
-            <Slot />
-            <ToastProvider />
+            <Clerk>
+              <Slot />
+              <ToastProvider />
+            </Clerk>
           </GestureHandlerRootView>
         </SentryNavigationIntegration>
       </QueryClientProvider>
