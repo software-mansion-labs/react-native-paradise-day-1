@@ -6,6 +6,9 @@ export default function Account() {
   const router = useRouter();
   return (
     <AccountScreen
+      signOut={() => {
+        router.replace("/sign-in");
+      }}
       navigateToUser={() => {
         router.push("/user");
       }}
