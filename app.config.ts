@@ -19,26 +19,47 @@ function getAppName() {
   const name = "CityRouter";
 
   // TODO(multiple-app-environments): Change app name for each environment
-  return name;
+  switch (environment) {
+    case "development":
+      return `${name} Dev`;
+    case "preview":
+      return `${name} Preview`;
+    default:
+      return name;
+  }
 }
 
 function getScheme() {
   const scheme = "city-router";
 
   // TODO(multiple-app-environments): Change scheme for each environment
-  return scheme;
+  switch (environment) {
+    case "development":
+      return `${scheme}-dev`;
+    case "preview":
+      return `${scheme}-preview`;
+    default:
+      return scheme;
+  }
 }
 
 function getUniqueIdentifier() {
   const bundleIdentifier = "com.paradise.cityrouter";
 
   // TODO(multiple-app-environments): Change bundle identifier for each environment
-  return bundleIdentifier;
+  switch (environment) {
+    case "development":
+      return `${bundleIdentifier}.dev`;
+    case "preview":
+      return `${bundleIdentifier}.preview`;
+    default:
+      return bundleIdentifier;
+  }
 }
 
 function getIcon(platform: "ios" | "android") {
   // TODO(multiple-app-environments): Change icon for each environment
-  return `./assets/app-icons/${platform}/development-icon.png`;
+  return `./assets/app-icons/${platform}/${environment}-icon.png`;
 }
 
 const uniqueIdentifier = getUniqueIdentifier();
