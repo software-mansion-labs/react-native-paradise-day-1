@@ -1,0 +1,37 @@
+{
+  "cli": {
+    "version": ">= 15.0.13",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "base": {
+      "ios": {
+        "simulator": true
+      },
+      "channel": "base"
+    },
+    "development": {
+      "extends": "base",
+      "environment": "development",
+      "developmentClient": true,
+      "channel": "development",
+      "android": {
+        "resourceClass": "large"
+      },
+      "ios": {
+        "resourceClass": "large"
+      }
+    },
+    "preview": {
+      "extends": "base",
+      "environment": "preview",
+      "channel": "preview"
+    },
+    "production": {
+      "extends": "base",
+      "environment": "production",
+      "autoIncrement": true,
+      "channel": "production"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+html, body { overscroll-behavior: none; }
+
+.glide__slide {
+  height: 100vh;
+  width: 100vw;
+}
+
+.glide__slide img {
+  object-fit: conver;
+  height: 100%;
+  width: 100%;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 4px 10px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(4px);
+}
+
+.watermark button {
+  background-color: transparent;
+  border: none;
+  color: #888;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  transition: all 0.2s ease;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; 
+  user-select: none; 
+}
+
+.watermark button:active {
+  color: #444;
+  transform: translateY(0);
+}

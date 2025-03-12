@@ -1,0 +1,87 @@
+{
+  "name": "uber-clone",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scheme": "uber-clone",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "lint": "eslint .",
+    "inspect": "node scripts/inspect.js",
+    "android-prebuild": "echo $(pwd)/bin/dev-android.tar.gz",
+    "ios-prebuild": "echo $(pwd)/bin/dev-ios-sim.tar.gz"
+  },
+  "dependencies": {
+    "@clerk/clerk-expo": "2.8.4",
+    "@clerk/types": "4.47.0",
+    "@expo/dom-webview": "^0.0.2",
+    "@expo/vector-icons": "^14.0.2",
+    "@glidejs/glide": "^3.7.1",
+    "@gorhom/bottom-sheet": "^5.1.1",
+    "@react-navigation/material-top-tabs": "^7.1.0",
+    "@sentry/react-native": "~6.9.0",
+    "@tanstack/react-query": "^5.67.2",
+    "expo": "~52.0.37",
+    "expo-auth-session": "~6.0.3",
+    "expo-background-task": "~0.1.2",
+    "expo-constants": "~17.0.7",
+    "expo-dev-client": "~5.0.12",
+    "expo-font": "~13.0.4",
+    "expo-image": "~2.0.6",
+    "expo-linking": "~7.0.5",
+    "expo-router": "~4.0.17",
+    "expo-secure-store": "^14.0.1",
+    "expo-splash-screen": "^0.29.22",
+    "expo-status-bar": "~2.0.1",
+    "expo-task-manager": "~12.0.5",
+    "expo-updates": "~0.27.2",
+    "mapbox-gl": "^3.10.0",
+    "radon-ide": "^0.0.1",
+    "react": "18.3.1",
+    "react-content-loader": "^7.0.2",
+    "react-dom": "18.3.1",
+    "react-native": "0.76.7",
+    "react-native-edge-to-edge": "^1.4.3",
+    "react-native-gesture-handler": "~2.22.0",
+    "react-native-pager-view": "6.5.1",
+    "react-native-reanimated": "4.0.0-beta.2",
+    "react-native-safe-area-context": "4.12.0",
+    "react-native-screens": "~4.4.0",
+    "react-native-svg": "15.8.0",
+    "react-native-toast-message": "^2.2.1",
+    "react-native-web": "~0.19.13",
+    "react-native-webview": "13.12.5",
+    "yn": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/glidejs__glide": "3.6.6",
+    "@types/react": "~18.3.12",
+    "eslint": "^8.57.0",
+    "eslint-config-expo": "~8.0.1",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "expo-atlas": "^0.4.0",
+    "prettier": "^3.5.2",
+    "typescript": "^5.3.3"
+  },
+  "private": true,
+  "expo": {
+    "install": {
+      "exclude": [
+        "react-native-reanimated@~3.16.1",
+        "react-native-gesture-handler@~2.20.0",
+        "react-native-screens@~4.4.0",
+        "@sentry/react-native@~6.3.0"
+      ]
+    }
+  },
+  "trustedDependencies": [
+    "@clerk/shared",
+    "@sentry/cli",
+    "browser-tabs-lock",
+    "core-js"
+  ]
+}

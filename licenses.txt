@@ -1,0 +1,19 @@
+"/assets/images/icons/box.png" by Joe Winter - https://www.iconfinder.com/Joe-Wint9r is licensed under CC BY 3.0 Unported
+"/assets/images/icons/boy.png" by icograms - https://www.iconfinder.com/icograms is licensed under CC BY 3.0
+"/assets/images/icons/burger.png" by BomSymbols - https://www.iconfinder.com/korawan_m is licensed under CC BY 3.0
+"/assets/images/icons/bus.png" icograms - https://www.iconfinder.com/icograms is licensed under CC BY 3.0
+"/assets/images/icons/calendar-clock.png" by paomedia - https://www.iconfinder.com/paomedia is licensed under CC BY 3.0
+"/assets/images/icons/car.png" by icograms - https://www.iconfinder.com/icograms is licensed under CC BY 3.0
+"/assets/images/icons/checkup.png" by Optima GFX - https://www.iconfinder.com/Candy_Design is licensed under CC BY 3.0
+"/assets/images/icons/dish.png" by Flatart - https://www.iconfinder.com/Flatart is licensed under CC BY 3.0
+"/assets/images/icons/drug.png" by Falara - https://www.iconfinder.com/Falara is licensed under CC BY 3.0
+"/assets/images/icons/flowers.png" by Flatart - https://www.iconfinder.com/Flatart is licensed under CC BY 3.0
+"/assets/images/icons/food.png" by Falara - https://www.iconfinder.com/Falara is licensed under CC BY 3.0
+"/assets/images/icons/globe-earth.png" by Artem White - https://www.iconfinder.com/ArtWhite is licensed under CC BY 3.0 Unported
+"/assets/images/icons/handbags.png" by Flatart - https://www.iconfinder.com/Flatart is licensed under CC BY 3.0
+"/assets/images/icons/lock.png" by by Marta Konyk https://www.iconfinder.com/MartaKonyk is licensed under CC BY 3.0 Unported
+"/assets/images/icons/rocket.png" by Optima GFX - https://www.iconfinder.com/Candy_Design is licensed under CC BY 3.0
+"/assets/images/icons/scooter.png" by WiStudio - https://www.iconfinder.com/wistudio is licensed under CC BY 3.0 Unported
+"/assets/images/icons/taxi-car.png" by icograms - https://www.iconfinder.com/icograms is licensed under CC BY 3.0 
+"/assets/images/icons/taxi.png" by Startup Graphic Design - https://www.iconfinder.com/startupgraphicdesign is licensed under CC BY 3.0 Unported
+"/assets/images/icons/wine.png" by Bekeen.co - https://www.iconfinder.com/bekeen.co is licensed under CC BY 3.0 Unported

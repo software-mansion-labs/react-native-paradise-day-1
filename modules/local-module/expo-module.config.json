@@ -1,0 +1,10 @@
+{
+  "name": "local-module",
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["LocalModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.localmodule.LocalModule"]
+  }
+}

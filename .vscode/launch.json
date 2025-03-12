@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "radon-ide",
+      "request": "launch",
+      "name": "Radon IDE panel",
+      "customBuild": {
+        "ios": {
+          "buildCommand": "bun run --silent ios-prebuild"
+        },
+        "android": {
+          "buildCommand": "bun run --silent android-prebuild"
+        }
+      }
+    }
+  ]
+}
