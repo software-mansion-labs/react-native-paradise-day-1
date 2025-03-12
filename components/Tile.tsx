@@ -14,7 +14,7 @@ export function Tile(props: TileProps) {
   const { title, image, onPress } = props;
 
   return (
-    <Button style={styles.tileContainer} onPress={onPress}>
+    <Button style={styles.tileContainer} onPress={onPress} sentry-label={title}>
       <View style={styles.title}>
         <Image
           style={{
