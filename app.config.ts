@@ -23,14 +23,14 @@ function getAppName() {
 }
 
 function getScheme() {
-  const scheme = "city-router";
+  const scheme = "city-router-dev";
 
   // TODO(multiple-app-environments): Change scheme for each environment
   return scheme;
 }
 
 function getUniqueIdentifier() {
-  const bundleIdentifier = "com.paradise.cityrouter";
+  const bundleIdentifier = "com.paradise.cityrouter.dev";
 
   // TODO(multiple-app-environments): Change bundle identifier for each environment
   return bundleIdentifier;
